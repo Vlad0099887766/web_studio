@@ -402,3 +402,78 @@ footer {
 	flex-direction: column;
 	gap: 10px;
 }
+.social_networks{
+	width: 20px;
+height: 20px;
+}
+.networks{
+		flex-basis: calc((100% - 30px) / 4);
+
+}
+.navder{
+	display: flex;
+		justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 16px 32px 30px;
+}
+.linkss:hover{
+	background-color: #2196F3;
+	color: #FFFFFF;
+	width: 44px;
+height: 44px;
+border-radius: 50%;
+font-size: 24px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+}
+.client{
+color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.08px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.links{
+	color: #FFF;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+.space{
+display: flex;
+justify-content: space-between;
+}
+.companis{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+.lishka{
+	flex-basis: calc((100% - 150px) / 6);
+}
+.compani_svg{
+	width: 106px;
+height: 60px;
+}
+.permanent{
+	padding: 16px 32px;
+	border-radius: 4px;
+border: 1px solid #AFB1B8;
+}
+.retreat{
+padding-top: 94px;
+padding-bottom: 94px;
+}
