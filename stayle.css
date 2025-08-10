@@ -54,26 +54,28 @@ header {
 	display: flex;
 	align-items: center;
 	gap: 50px;
-	position: relative;
-	text-decoration: none;
+
 }
-.nav_menu a::after{
+.nav_menu> li{
+		position: relative;
+
+}
+.nav_menu-link::after{
 	content: "";
 position: absolute;
-
 border-radius: 2px;
 background-color: #2196F3;
-width: 48px;
+width: 0px;
 height: 4px;
-bottom: 0;
-
 top: 47px;
-text-decoration: underline;
+transition-property: width;
+transition-duration: 400ms;
+transition-timing-function: linear;
 left: 0;
 
 }
-.nav_menu a:hover:after{
-	width: 48px;
+.nav_menu-link:hover:after{
+	width: 100%;
 	
 }
 
@@ -96,7 +98,9 @@ left: 0;
 	align-items: center;
 	gap: 50px;
 }
-
+.social__contacts>a:hover:after{
+	width: 100%;
+}
 .social__contacts a {
 	color: #757575;
 	font-family: Roboto;
@@ -106,9 +110,25 @@ left: 0;
 	line-height: normal;
 	letter-spacing: 0.28px;
 }
+.social__contacts> a{
+	position: relative;
+}
 
 .social__contacts a:hover {
 	color: #2196f3;
+}
+.social__contacts> a::after{
+		content: "";
+position: absolute;
+border-radius: 2px;
+background-color: #2196F3;
+width: 0px;
+height: 4px;
+top: 47px;
+transition-property: width;
+transition-duration: 400ms;
+transition-timing-function: linear;
+left: 0;
 }
 
 span {
@@ -447,16 +467,18 @@ border-radius: 50%;
 display: inline-flex;
 align-items: center;
 justify-content: center;
+transition-property: background-color;
+transition-duration: 600ms;
+transition-timing-function: linear;
+
 }
 .linkss:hover{
 	background-color: #2196F3;
 	fill: #FFFFFF;
-	/* width: 44px;
-height: 44px; */
-/* border-radius: 50%; */
-/* font-size: 24px; */
 
 }
+
+
 .client{
 color: #212121;
 text-align: center;
@@ -508,6 +530,7 @@ height: 60px;
 	padding: 16px 32px;
 	border-radius: 4px;
 border: 1px solid #AFB1B8;
+
 }
 .retreat{
 padding-top: 94px;
@@ -519,10 +542,13 @@ padding-bottom: 94px;
 }
 .permanent{
 fill: #AFB1B8;
+transition-property: fill;
+transition-duration: 600ms;
+transition-timing-function: linear;
 }
-.compani_svg:hover{
+.permanent:hover{
 	fill: #2196F3;
-	/* fill: #FFFFFF; */
+
 }
 .socsal_networks{
 	display: flex;
